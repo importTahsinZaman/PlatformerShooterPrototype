@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Hitbox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://FadingPlatform.gd" type="Script" id=2]
+
+[node name="FadingPlatform" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Hitbox" parent="." instance=ExtResource( 1 )]
+width = 48
+height = 10
+color = Color( 0.870588, 0.0901961, 0.145098, 0.501961 )
+disable_color = Color( 0.666667, 0.117647, 0.117647, 0.501961 )
+
+[node name="Tween" type="Tween" parent="."]
